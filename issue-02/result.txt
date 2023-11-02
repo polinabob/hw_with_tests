@@ -1,0 +1,13 @@
+Test input and expected outputs:
+('... --- ...', 'SOS'),
+('.---- ..--- ...--', '123'),
+('- . ... -', 'TEST')
+
+The result of running a test:
+collected 3 items
+
+morse_test_2.py::test_decode[... --- ...-SOS] PASSED                                                                                           [ 33%] 
+morse_test_2.py::test_decode[.---- ..--- ...---123] PASSED                                                                                     [ 66%] 
+morse_test_2.py::test_decode[- . ... --TEST] PASSED                                                                                            [100%] 
+
+================================================================= 3 passed in 0.03s ================================================================= 
