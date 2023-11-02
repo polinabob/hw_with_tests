@@ -1,0 +1,20 @@
+Test inputs and expected outputs:
+Input #1: ['0']
+Expected output #1 (assertEqual method is used): [('0', [1])]
+Input #2: ['Moscow', 'New York', 'Moscow', 'London']
+Expected output #2 (assertEqual method is used): [('Moscow', [0, 0, 1]), ('New York', [0, 1, 0]), ('Moscow', [0, 0, 1]), ('London', [1, 0, 0])]
+Input #3: ['0', '0']
+Expected member of output list #3 (assertIn method is used): ('0', [1])
+Input #4: ['a', 'a', 'b', 'c', 'b', 'a']
+Expected output #4 (assertTrue method is used): [('a', [0, 0, 1]), ('a', [0, 0, 1]), ('b', [0, 1, 0]), ('c', [1, 0, 0]), ('b', [0, 1, 0]), ('a', [0, 0, 1])]
+
+Result of running a test:
+test_some_lists (ohe_test.TestFitTransform.test_some_lists) ... ok
+
+Tests that check whether TypeError is raised when args is not iterable or len(args) == 0:
+self.assertRaises(TypeError, fit_transform, 123)
+self.assertRaises(TypeError, fit_transform, )
+
+Result of running a test:
+test_raises (ohe_test.TestFitTransform.test_raises)
+Checks if TypeError is raised when args is not iterable ... ok
