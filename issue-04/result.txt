@@ -1,0 +1,28 @@
+Test inputs for test_fit_transform:
+['0'],
+('0',),
+['Moscow', 'New York', 'Moscow', 'London'],
+['a', 'a', 'b', 'c', 'b', 'a']
+
+Corresponding expected outputs:
+[('0', [1])], [('0', [1])],
+[
+    ('Moscow', [0, 0, 1]),
+    ('New York', [0, 1, 0]),
+    ('Moscow', [0, 0, 1]),
+    ('London', [1, 0, 0]),
+],
+[
+    ('a', [0, 0, 1]), ('a', [0, 0, 1]), ('b', [0, 1, 0]),
+    ('c', [1, 0, 0]), ('b', [0, 1, 0]), ('a', [0, 0, 1])
+]
+
+Test inputs for test_raised: 123, empty input. In both cases TypeError is expected.
+
+Result of running tests:
+collected 2 items                                                                                                                                     
+
+ohe_test_2.py::test_fit_transform PASSED                                                                                                       [ 50%] 
+ohe_test_2.py::test_raises PASSED                                                                                                              [100%] 
+
+================================================================= 2 passed in 0.03s ================================================================= 
