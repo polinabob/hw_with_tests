@@ -1,0 +1,30 @@
+"""
+>>> encode('SOS') # doctest +NORMALIZE_WHITESPACE
+'... --- ...'
+>>> encode(123)
+Traceback (most recent call last):
+     ...
+TypeError: 'int' object is not iterable
+"""
+
+Result of running a test:
+
+Trying:
+    encode('SOS') # doctest +NORMALIZE_WHITESPACE
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode(123)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: 'int' object is not iterable
+ok
+1 items had no tests:
+    morse_test
+1 items passed all tests:
+   2 tests in morse_test.encode
+2 tests in 2 items.
+2 passed and 0 failed.
+Test passed.
